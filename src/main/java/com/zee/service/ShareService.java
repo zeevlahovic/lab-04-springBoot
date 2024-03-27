@@ -1,2 +1,4 @@
-package com.zee.service;public interface ShareService {
+package com.zee.service;
+
+public interface ShareService {
 }

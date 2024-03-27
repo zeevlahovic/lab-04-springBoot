@@ -1,2 +1,8 @@
-package com.zee.repository;public interface RecipeRepository {
+package com.zee.repository;
+
+import com.zee.model.Recipe;
+
+public interface RecipeRepository {
+
+    void saveRecipe(Recipe recipe);
 }
