@@ -1,4 +1,4 @@
-package com.zee.service;
+package com.zee.proxy;
 
 import com.zee.model.Recipe;
 

@@ -16,4 +16,6 @@ public class Recipe {
     private int duration;
     private List<Ingredient>ingredients;
     private RecipeType recipeType;
+
+
 }
