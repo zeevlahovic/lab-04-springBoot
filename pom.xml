@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.zee</groupId>
-    <artifactId>lab-05-springBoot</artifactId>
+    <artifactId>lab-04-springBoot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>lab-05-springBoot</name>
     <description>lab-05-springBoot</description>
