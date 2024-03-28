@@ -4,5 +4,5 @@ import com.zee.model.Recipe;
 
 public interface RecipeService {
 
-    Recipe prepareRecipe();
+    void prepareRecipe();
 }

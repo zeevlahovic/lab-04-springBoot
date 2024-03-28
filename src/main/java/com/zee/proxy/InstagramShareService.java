@@ -8,6 +8,6 @@ public class InstagramShareService implements ShareService{
 
     @Override
     public void shareService(Recipe recipe) {
-
+        System.out.println("recipe shared on facebook");
     }
 }
