@@ -1,7 +1,7 @@
 package com.zee;
 
 import com.github.javafaker.Faker;
-import com.zee.service.RecipeServiceImplementation;
+import com.zee.service.RecipeServiceImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -14,7 +14,7 @@ public class ZeeApplication {
 
         ApplicationContext container = SpringApplication.run(ZeeApplication.class, args);
 
-        RecipeServiceImplementation recipeServiceImplementation = container.getBean(RecipeServiceImplementation.class);
+        RecipeServiceImpl recipeServiceImplementation = container.getBean(RecipeServiceImpl.class);
         recipeServiceImplementation.printAppConfig();
 
         recipeServiceImplementation.prepareRecipe();

@@ -18,7 +18,7 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 @Component
-public class RecipeServiceImplementation implements RecipeService {
+public class RecipeServiceImpl implements RecipeService {
 
 
     private final Faker faker;
@@ -30,7 +30,7 @@ public class RecipeServiceImplementation implements RecipeService {
 
 
     @Override
-    public void prepareRecipe() {
+    public boolean prepareRecipe() {
 
         List<Ingredient> ingredients = new ArrayList<>();
         ingredients.add(new Ingredient(faker.food().dish(), 5, QuantityType.OUNCE));
@@ -41,8 +41,9 @@ public class RecipeServiceImplementation implements RecipeService {
 
         shareService.shareService(recipe);
 
-        recipeRepository.saveRecipe(recipe);
+        recipeRepository.save(recipe);
 
+        return true;
 
     }
 

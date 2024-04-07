@@ -7,12 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class SaveRecipeRepository implements RecipeRepository {
+public class RecipeRepositoryImpl implements RecipeRepository {
 
+    List<Recipe> recipeList = new ArrayList<>();
 
     @Override
-    public void saveRecipe(Recipe recipe) {
-        List<Recipe> recipeList = new ArrayList<>();
-        recipeList.add(recipe);
+    public boolean save(Recipe recipe) {
+      return recipeList.add(recipe);
     }
 }
